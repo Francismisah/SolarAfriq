@@ -1,0 +1,16 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 19 Aug 2024 15:28:37 at https://html.ditsolution.net/drtheme/dreamhub/solar-company/shop.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://html.ditsolution.net/drtheme/dreamhub/solar-company/shop.html -O1 "C:\ProjectsXYZ\Solarafriq" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+15:29:30	Error: 	"Not Found" (404) at link https://html.ditsolution.net/drtheme/dreamhub/solar-company/Project-details.html (from https://html.ditsolution.net/drtheme/dreamhub/solar-company/shop.html)
+15:29:37	Error: 	"Not Found" (404) at link https://html.ditsolution.net/drtheme/dreamhub/solar-company/cart.html (from https://html.ditsolution.net/drtheme/dreamhub/solar-company/shop.html)
+15:29:38	Error: 	"Not Found" (404) at link https://html.ditsolution.net/drtheme/dreamhub/solar-company/assets/css/owl.video.play.png (from https://html.ditsolution.net/drtheme/dreamhub/solar-company/assets/css/owl.carousel.min.css)
+15:29:40	Error: 	"Not Found" (404) at link https://html.ditsolution.net/drtheme/dreamhub/images/resource/serv-dtls-bg.jpg (from https://html.ditsolution.net/drtheme/dreamhub/solar-company/style.css)
+15:29:43	Error: 	"Not Found" (404) at link https://html.ditsolution.net/drtheme/dreamhub/solar-company/popper.js (from https://html.ditsolution.net/drtheme/dreamhub/solar-company/assets/js/bootstrap.min.js)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 6 seconds : 168 links scanned, 161 files written (9907515 bytes overall) [6125988 bytes received at 92818 bytes/sec], 5879155 bytes transferred using HTTP compression in 70 files, ratio 34%, 16.8 requests per connection
+(5 errors, 0 warnings, 0 messages)
