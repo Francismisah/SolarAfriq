@@ -97,9 +97,9 @@
 			<div class="col-lg-7">
 				<div class="header-menu">
 					<ul class="nav_scroll">
-						<!-- <li class="menu-item-has-children"><a href="index.html">Home</a></li>
+						<!-- <li class="menu-item-has-children"><a href="index.html">Home</a></li> -->
 						<li><a href="about.html">About</a></li>
-						<li class="menu-item-has-children"><a href="#">Pages<i class="fas fa-caret-down"></i></a>
+						<!-- <li class="menu-item-has-children"><a href="#">Pages<i class="fas fa-caret-down"></i></a>
 						   <ul class="sub-menu">
 								<li><a href="about.html">About Us</a></li>
 								<li><a href="service.html">Service</a></li>
@@ -111,12 +111,12 @@
 								<li><a href="faqs.html">Faqs</a></li>
 							</ul>
 						</li> -->
-						<li class="menu-item-has-children"><a href="#">Solar<i class="fas fa-caret-down"></i></a>
+						<!-- <li class="menu-item-has-children"><a href="#">Welcome<i class="fas fa-caret-down"></i></a>
 						   <ul class="sub-menu">
 								<li><a href="shop.html">Solar Shop</a></li>
 								<li><a href="shop-details.html">Solar Agent</a></li>
 							</ul>
-						</li>
+						</li> -->
 						<!-- <li class="menu-item-has-children"><a href="#">Blog<i class="fas fa-caret-down"></i></a>
 						   <ul class="sub-menu">
 								<li><a href="blog-grid.html">Blog Gird</a></li>
@@ -124,17 +124,19 @@
 								<li><a href="blog-2column.html">Blog 2column</a></li>
 								<li><a href="blog-details.html">Blog Details </a></li>
 							</ul>
-						</li>
-						<li><a href="contact.html">Contact</a></li> -->
+						</li> -->
 					</ul>
 				</div>
 			</div>
 			<div class="col-lg-3 text-right">
-				<div class="header-search-button search-box-outer">
+				<!-- Search icon -->
+				<!-- <div class="header-search-button search-box-outer">
 					<a href="#"><i class="fas fa-search"></i></a>
-				</div>
-				<div class="header-button">
-					<a href="contact.html"><i class="fas fa-user"></i>profile</a>
+				</div> -->
+				<div class="header-menu">
+					<ul class="nav_scroll">
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -170,8 +172,8 @@
 					</li> -->
 					<li class="menu-item-has-children"><a href="#">Solar</a>
 					   <ul class="sub-menu">
-							<li><a href="shop.html">Solar Shop</a></li>
-							<li><a href="shop-details.html">Solar Agents</a></li>
+							<li><a href="shop.html">Shop</a></li>
+							<li><a href="shop-details.html">Installers</a></li>
 						</ul>
 					</li>
 					<!-- <li class="menu-item-has-children"><a href="#">Blog</a>
@@ -182,7 +184,7 @@
 							<li><a href="blog-details.html">Blog Details </a></li>
 						</ul>
 					</li> -->
-					<li><a href="contact.html">Profile</a></li>
+					<li><a href="#">Profile</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -190,10 +192,6 @@
 <!--==================================================-->
 <!-- End-Mobile-Menu-->
 <!--==================================================-->
-
-
-
-
 
 
 <!--==================================================-->
@@ -206,12 +204,26 @@
 				<div class="hero-content">
 					<h4>Welcome to SolarAfriq</h4>
 					<h1>A New way of Installing and maintaining solar system</h1>
-					<h1>Let's get you match with a solar agent close to you!!!</h1>
 					<p class="hero-desc"> 
 					We're committed to respecting our environment, sustaining our communities, 
 					investing in our team and growing shareholder value. </p>
-					<div class="solar-button">
-						<a href="#">Get Match<i class="fas fa-plus"></i></a>
+					<div id="openFormBtn" class="solar-button">
+						<a>Get Match<i class="fas fa-plus"></i></a>
+					</div>
+					<div id="popupOverlay" class="popup-overlay"></div> <!--Dark overlay-->
+					<!--Form-->
+					<div id="popupForm" class="popup-form">
+						<h2>Let's get your information so we match you with the nearest installer</h2>
+						<form>
+							<label for="name">Name:</label>
+							<input type="text" id="name" name="name" required><br><br>
+							<label for="phone">Phone Number:</label>
+							<input type="number" id="number" name="number" required><br><br>
+							<label for="address">Address:</label>
+							<input type="number, text" id="numText" name="numText" required><br><br>
+							<button type="submit">Submit</button>
+							<button type="button" id="closeFormBtn">Close</button>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -1096,6 +1108,8 @@
 	<!-- progresscircle js -->	
 	<script src="assets/js/progresscircle.js"></script>
 
+	<!---JavaScript file-->
+	<script src="script.js"></script>
 
 </body>
 
