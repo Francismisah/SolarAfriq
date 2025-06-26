@@ -1,172 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="assets/images/fav-icon/icon.png">
-  <title>
-    SolarAfriq - Get match with expert solar agents
-  </title>
-  <!--     Fonts and icons     -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
-  <!-- Nucleo Icons -->
-  <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
-  <link href="assets/css/nucleo-svg.css" rel="stylesheet" />
-  <!-- Font Awesome Icons -->
-  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-  <link href="assets/css/nucleo-svg.css" rel="stylesheet" />
-  <!-- CSS Files -->
-  <link id="pagestyle" href="assets/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../assets/img/apple-icon.png"
+    />
+    <link rel="icon" type="image/png" href="assets/images/fav-icon/icon.png" />
+    <title>SolarAfriq - Get match with expert solar agents</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
+      rel="stylesheet"
+    />
+    <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="assets/css/nucleo-svg.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/42d5adcbca.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="assets/css/nucleo-svg.css" rel="stylesheet" />
+    <link
+      id="pagestyle"
+      href="assets/css/soft-ui-dashboard.css?v=1.0.3"
+      rel="stylesheet"
+    />
+  </head>
 
-<body class="">
-  <div class="container position-sticky z-index-sticky top-0">
-    <div class="row">
-      <div class="col-12">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg blur blur-rounded top-0 z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
-          <div class="container-fluid">
-            <div class="col-lg-2">
-              <div class="header-logo">
-                <a href="index.html"><img src="assets/images/header-logo.png" alt="logo"></a>
+  <body class="">
+    <div class="container position-sticky z-index-sticky top-0">
+      <div class="row">
+        <div class="col-12">
+          <nav
+            class="navbar navbar-expand-lg blur blur-rounded top-0 z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-4"
+          >
+            <div class="container-fluid">
+              <div class="col-lg-2">
+                <div class="header-logo">
+                  <a href="index.html"
+                    ><img src="assets/images/header-logo.png" alt="logo"
+                  /></a>
+                </div>
+              </div>
+              <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3">
+                Sign into your Installer's Dashboard
+              </a>
+              <button
+                class="navbar-toggler shadow-none ms-2"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navigation"
+                aria-controls="navigation"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon mt-2">
+                  <span class="navbar-toggler-bar bar1"></span>
+                  <span class="navbar-toggler-bar bar2"></span>
+                  <span class="navbar-toggler-bar bar3"></span>
+                </span>
+              </button>
+              <ul class="navbar-nav d-lg-block d-none">
+                <li class="nav-item">
+                  <a
+                    href="https://burasolutions.com/"
+                    class="btn btn-sm btn-round mb-0 me-1 bg-gradient-dark"
+                    >Bura Solutions</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <main class="main-content mt-0">
+      <section>
+        <div class="page-header min-vh-75">
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-xl-4 col-lg-5 col-md-6 d-flex flex-column mx-auto"
+              >
+                <div class="card card-plain mt-8">
+                  <div class="card-header pb-0 text-left bg-transparent">
+                    <h3 class="font-weight-bolder text-info text-gradient">
+                      Welcome back Installer
+                    </h3>
+                    <p class="mb-0">
+                      Enter your email and password to sign in as an installer
+                    </p>
+                  </div>
+                  <div class="card-body">
+                    <form id="login-form" role="form">
+                      <label>Email</label>
+                      <div class="mb-3">
+                        <input
+                          type="email"
+                          id="login-email"
+                          class="form-control"
+                          placeholder="email"
+                          aria-label="email"
+                          aria-describedby="email-addon"
+                          required
+                        />
+                      </div>
+                      <label>Password</label>
+                      <div class="mb-3">
+                        <input
+                          type="password"
+                          id="login-password"
+                          class="form-control"
+                          placeholder="Password"
+                          aria-label="Password"
+                          aria-describedby="password-addon"
+                          required
+                        />
+                      </div>
+                      <div class="form-check form-switch">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="rememberMe"
+                          checked=""
+                        />
+                        <label class="form-check-label" for="rememberMe"
+                          >Remember me</label
+                        >
+                      </div>
+                      <div class="text-center">
+                        <button
+                          type="submit"
+                          class="btn bg-gradient-info w-100 mt-4 mb-0"
+                        >
+                          Sign in
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="card-footer text-center pt-0 px-lg-2 px-1">
+                    <p class="mb-4 text-sm mx-auto">
+                      Are you a solar installer?
+                      <a href="signUp.html">Sign up</a> Now!
+                    </p>
+                  </div>
+                  <div class="card-footer text-center pt-0 px-lg-2 px-1">
+                    <p id="message"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div
+                  class="oblique position-absolute top-0 h-100 d-md-block d-none me-n8"
+                >
+                  <div
+                    class="oblique-image bg-cover position-absolute fixed-top ms-auto h-100 z-index-0 ms-n6"
+                    style="
+                      background-image: url('assets/images/solar-panel.jpg');
+                    "
+                  ></div>
+                </div>
               </div>
             </div>
-            <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3">
-              Sign into your Installer's Dashboard
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mb-4 mx-auto text-center">
+            <a
+              href="javascript:;"
+              target="_blank"
+              class="text-secondary me-xl-5 me-xl-4 mb-sm-0 mb-2"
+            >
+              Home
             </a>
-            <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon mt-2">
-                <span class="navbar-toggler-bar bar1"></span>
-                <span class="navbar-toggler-bar bar2"></span>
-                <span class="navbar-toggler-bar bar3"></span>
-              </span>
-            </button>
-            <ul class="navbar-nav d-lg-block d-none">
-              <li class="nav-item">
-                <a href="https://burasolutions.com/" class="btn btn-sm btn-round mb-0 me-1 bg-gradient-dark">Bura Solutions</a>
-              </li>
-            </ul>
+            <a
+              href="javascript:;"
+              target="_blank"
+              class="text-secondary me-xl-5 me-xl-4 mb-sm-0 mb-2"
+            >
+              Shop
+            </a>
+            <a
+              href="javascript:;"
+              target="_blank"
+              class="text-secondary me-xl-5 me-xl-4 mb-sm-0 mb-2"
+            >
+              About Us
+            </a>
+            <a
+              href="javascript:;"
+              target="_blank"
+              class="text-secondary me-xl-5 me-xl-4 mb-sm-0 mb-2"
+            >
+              Contact Us
+            </a>
           </div>
-        </nav>
-        <!-- End Navbar -->
-      </div>
-    </div>
-  </div>
-  <main class="main-content  mt-0">
-    <section>
-      <div class="page-header min-vh-75">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-4 col-lg-5 col-md-6 d-flex flex-column mx-auto">
-              <div class="card card-plain mt-8">
-                <div class="card-header pb-0 text-left bg-transparent">
-                  <h3 class="font-weight-bolder text-info text-gradient">Welcome back Installer</h3>
-                  <p class="mb-0">Enter your email and password to sign in as an installer</p>
-                </div>
-                <div class="card-body">
-                  <form id="login-form" role="form">
-                    <label>Email</label>
-                    <div class="mb-3">
-                      <input type="email" id="login-email" class="form-control" placeholder="email" aria-label="email" aria-describedby="email-addon" required>
-                    </div>
-                    <label>Password</label>
-                    <div class="mb-3">
-                      <input type="password" id="login-password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="password-addon" required>
-                    </div>
-                    <div class="form-check form-switch">
-                      <input class="form-check-input" type="checkbox" id="rememberMe" checked="">
-                      <label class="form-check-label" for="rememberMe">Remember me</label>
-                    </div>
-                    <div class="text-center">
-                      <button type="submit" class="btn bg-gradient-info w-100 mt-4 mb-0">Sign in</button>
-                    </div>
-                  </form>
-                </div>
-                <div class="card-footer text-center pt-0 px-lg-2 px-1">
-                  <p class="mb-4 text-sm mx-auto">
-                    Are you a solar installer?
-                    <a href="signUp.html">Sign up</a> Now!
-                  </p>
-                </div>
-                <div class="card-footer text-center pt-0 px-lg-2 px-1">
-                  <p id="message"></p>
-                  <!-- <p id="notfound"></p> -->
-                </div>
-              </div>
-            </div>
-            <!--inage for login-->
-            <div class="col-md-6">
-              <div class="oblique position-absolute top-0 h-100 d-md-block d-none me-n8">
-                <div class="oblique-image bg-cover position-absolute fixed-top ms-auto h-100 z-index-0 ms-n6" style="background-image:url('assets/images/solar-panel.jpg')"></div>
-              </div>
-            </div>
+          <div class="col-lg-8 mx-auto text-center mb-4 mt-2">
+            <a
+              href="javascript:;"
+              target="_blank"
+              class="text-secondary me-xl-4 me-4"
+            >
+              <span class="text-lg fab fa-facebook-f"></span>
+            </a>
+            <a
+              href="javascript:;"
+              target="_blank"
+              class="text-secondary me-xl-4 me-4"
+            >
+              <span class="text-lg fab fa-twitter"></span>
+            </a>
+            <a
+              href="javascript:;"
+              target="_blank"
+              class="text-secondary me-xl-4 me-4"
+            >
+              <span class="text-lg fab fa-linkedin-in"></span>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8 mx-auto text-center mt-1">
+            <p class="mb-0 text-secondary">
+              Copyright ©
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+            </p>
           </div>
         </div>
       </div>
-    </section>
-  </main>
-  <!-- -------- START FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
-  <footer class="footer py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mb-4 mx-auto text-center">
-          <a href="javascript:;" target="_blank" class="text-secondary me-xl-5 me-xl-4 mb-sm-0 mb-2">
-            Home
-          </a>
-          <a href="javascript:;" target="_blank" class="text-secondary me-xl-5 me-xl-4 mb-sm-0 mb-2">
-            Shop
-          </a>
-          <a href="javascript:;" target="_blank" class="text-secondary me-xl-5 me-xl-4 mb-sm-0 mb-2">
-            About Us
-          </a>
-          <a href="javascript:;" target="_blank" class="text-secondary me-xl-5 me-xl-4 mb-sm-0 mb-2">
-            Contact Us
-          </a>
-        </div>
-        <div class="col-lg-8 mx-auto text-center mb-4 mt-2">
-          <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
-            <span class="text-lg fab fa-facebook-f"></span>
-          </a>
-          <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
-            <span class="text-lg fab fa-twitter"></span>
-          </a>
-          <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
-            <span class="text-lg fab fa-linkedin-in"></span>
-          </a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-8 mx-auto text-center mt-1">
-          <p class="mb-0 text-secondary">
-            Copyright © <script>
-              document.write(new Date().getFullYear())
-            </script>
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- -------- END FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
-  <!--   Core JS Files   -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js" integrity="sha512-nnzkI2u2Dy6HMnzMIkh7CPd1KX445z38XIu4jG1jGw7x5tSL3VBjE44dY4ihMU1ijAQV930SPM12cCFrB18sVw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/perfect-scrollbar/1.5.5/perfect-scrollbar.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"></script>
-  <script src="../solar-company/logic/signIn.js"></script>
-  <script>
-    var win = navigator.platform.indexOf('Win') > -1;
-    if (win && document.querySelector('#sidenav-scrollbar')) {
-      var options = {
-        damping: '0.5'
-      }
-      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
-    }
-  </script>
-  <!-- Github buttons -->
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
-  <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
-  <script type="module" src="../solar-company/assets/js/soft-ui-dashboard.min.js"></script>
-</body>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"
+      integrity="sha512-nnzkI2u2Dy6HMnzMIkh7CPd1KX445z38XIu4jG1jGw7x5tSL3VBjE44dY4ihMU1ijAQV930SPM12cCFrB18sVw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/perfect-scrollbar/1.5.5/perfect-scrollbar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"></script>
+    <script>
+      // Define your API URL globally
+      const graphql_ApiUrl = "https://solar-afriq.onrender.com/graphql";
 
+      // GraphQL Mutation for Sign In
+      // IMPORTANT: Confirm 'signIn' is the exact mutation name on your backend.
+      // Also confirm the structure of the 'user' object returned (e.g., 'name' vs 'fullName').
+      const SIGN_IN_MUTATION = `
+  mutation Login($email: String!, $password: String!) {
+      login(email: $email, password: $password) {
+          token
+          user {
+              id
+              name
+              email
+              role
+          }
+      }
+  }
+`;
+      document.addEventListener("DOMContentLoaded", () => {
+        // Get references to DOM elements
+        const loginForm = document.getElementById("login-form");
+        const loginEmailInput = document.getElementById("login-email");
+        const loginPasswordInput = document.getElementById("login-password");
+        const messageParagraph = document.getElementById("message"); // For displaying messages to the user
+        // Ensure your HTML button has id="signInButton" for this to work
+        const signInButton = document.getElementById("signInButton");
+
+        // Add event listener for form submission
+        loginForm.addEventListener("submit", async (event) => {
+          event.preventDefault(); // Prevent default form submission (page reload)
+
+          // Get user input and trim whitespace
+          const email = loginEmailInput.value.trim();
+          const password = loginPasswordInput.value.trim();
+
+          // Basic client-side validation
+          if (!email || !password) {
+            messageParagraph.textContent =
+              "Please enter both email and password.";
+            messageParagraph.style.color = "red";
+            return; // Stop execution if validation fails
+          }
+
+          // Disable the button and show a loading message while API call is in progress
+          if (signInButton) {
+            signInButton.disabled = true; // Disable the button
+          }
+          messageParagraph.textContent = "Signing in...";
+          messageParagraph.style.color = "blue";
+
+          // Prepare variables for the GraphQL mutation
+          const variables = {
+            email: email,
+            password: password,
+          };
+
+          try {
+            // Make the GraphQL API call using fetch
+            const response = await fetch(graphql_ApiUrl, {
+              method: "POST", // GraphQL mutations are typically POST requests
+              headers: {
+                "Content-Type": "application/json", // Specify that the request body is JSON
+                Accept: "application/json", // Indicate that we prefer a JSON response
+              },
+              // The body contains the GraphQL query and its variables, stringified to JSON
+              body: JSON.stringify({
+                query: SIGN_IN_MUTATION,
+                variables: variables,
+              }),
+            });
+
+            // Parse the JSON response from the server
+            const result = await response.json();
+
+            // Check if the response contains GraphQL errors
+            if (result.errors) {
+              console.error("GraphQL Sign In Error:", result.errors);
+              // Extract and display user-friendly error messages
+              const errorMessage =
+                result.errors.map((err) => err.message).join(", ") ||
+                "An unknown error occurred during sign-in.";
+              messageParagraph.textContent = `Sign-in failed: ${errorMessage}`;
+              messageParagraph.style.color = "red";
+            } else if (result.data && result.data.login) {
+              // <-- CHANGED from result.data.signIn to result.data.login
+              // If no errors and data.login exists, login was successful
+              const { token, user } = result.data.login; // <-- CHANGED from result.data.signIn to result.data.login
+
+              console.log("Sign In successful! Token:", token, "User:", user);
+              messageParagraph.textContent = `Welcome, ${
+                user.name || user.email
+              }!`; // Use 'user.name' or 'user.fullName' as per your backend
+              messageParagraph.style.color = "green";
+
+              // Store the authentication token and user data in localStorage
+              // This makes them accessible across different pages and browser sessions
+              localStorage.setItem("authToken", token);
+              localStorage.setItem("currentUser", JSON.stringify(user));
+
+              // Redirect the user to the dashboard or appropriate page
+              window.location.href = "installers-dashboard.html"; // *** IMPORTANT: Change to your actual dashboard path ***
+            } else {
+              // Handle cases where the API call succeeded but the response data was unexpected
+              console.error("Unexpected API response for sign-in:", result);
+              messageParagraph.textContent =
+                "An unexpected response was received from the server. Please try again.";
+              messageParagraph.style.color = "red";
+            }
+          } catch (error) {
+            // Catch any network-related errors or issues during fetch/parsing
+            console.error("Network or parsing error during sign-in:", error);
+            messageParagraph.textContent =
+              "Network error. Please check your internet connection and try again.";
+            messageParagraph.style.color = "red";
+          } finally {
+            // Ensure the button is re-enabled whether the API call succeeded or failed
+            if (signInButton) {
+              signInButton.disabled = false;
+            }
+          }
+        });
+      });
+
+      // Existing script for scrollbar (if needed)
+      var win = navigator.platform.indexOf("Win") > -1;
+      if (win && document.querySelector("#sidenav-scrollbar")) {
+        var options = {
+          damping: "0.5",
+        };
+        Scrollbar.init(document.querySelector("#sidenav-scrollbar"), options);
+      }
+    </script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script
+      type="module"
+      src="../solar-company/assets/js/soft-ui-dashboard.min.js"
+    ></script>
+  </body>
 </html>
