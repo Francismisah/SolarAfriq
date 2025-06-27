@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../assets/img/apple-icon.png"
+    />
+    <link rel="icon" type="image/png" href="assets/images/fav-icon/icon.png" />
+    <title>SolarAfriq - Get match with expert solar agents</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
+      rel="stylesheet"
+    />
+    <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="assets/css/nucleo-svg.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/42d5adcbca.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="assets/css/nucleo-svg.css" rel="stylesheet" />
+    <link
+      id="pagestyle"
+      href="assets/css/soft-ui-dashboard.css?v=1.0.3"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="g-sidenav-show bg-gray-100">
+    <div class="container position-sticky z-index-sticky top-0"></div>
+    <div class="row">
+      <div class="col-12">
+        <nav
+          class="navbar navbar-expand-lg blur blur-rounded top-0 z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-4"
+        >
+          <div class="container-fluid">
+            <div class="col-lg-2">
+              <div class="header-logo">
+                <a href="index.html"
+                  ><img
+                    src="assets/images/header-logo.png"
+                    alt="SolarAfriq Logo"
+                /></a>
+              </div>
+            </div>
+            <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3">
+              Join as an Installer
+            </a>
+            <button
+              class="navbar-toggler shadow-none ms-2"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navigation"
+              aria-controls="navigation"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon mt-2">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </span>
+            </button>
+            <ul class="navbar-nav d-lg-block d-none">
+              <li class="nav-item">
+                <a
+                  href="https://burasolutions.com/"
+                  class="btn btn-sm btn-round mb-0 me-1 bg-gradient-dark"
+                  >Bura Solutions</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <section class="min-vh-100 mb-8">
+      <div
+        class="page-header align-items-start min-vh-50 pt-5 pb-11 m-3 border-radius-lg"
+        style="background-image: url('assets/images/bradcumb-bg.jpg')"
+      >
+        <span class="mask bg-gradient-dark opacity-6"></span>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-5 text-center mx-auto">
+              <h1 class="text-white mb-2 mt-5">Welcome!</h1>
+              <p class="text-lead text-white">
+                Are you a skilled solar installer? Register on our platform and
+                let us match you with people who need your expertise.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row mt-lg-n10 mt-md-n11 mt-n10">
+          <div class="col-xl-4 col-lg-5 col-md-7 mx-auto">
+            <div class="card z-index-0">
+              <div class="card-header text-center pt-4">
+                <h5>Register with</h5>
+              </div>
+              <div class="card-body text-center pt-4">
+                <p id="message"></p>
+              </div>
+              <div class="card-body">
+                <form id="signup-form" role="form text-left">
+                  <div class="mb-3">
+                    <label class="form-check-label" for="signup-fullname">
+                      Full Name
+                      <input
+                        type="text"
+                        id="signup-fullname"
+                        class="form-control"
+                        placeholder="Name"
+                        aria-label="Name"
+                        aria-describedby="full name"
+                        required
+                      />
+                    </label>
+                  </div>
+                  <div class="mb-3">
+                    <label
+                      class="form-check-label"
+                      for="signup-phonenumber"
+                    >
+                      Phone Number
+                      <input
+                        type="tel"
+                        id="signup-phonenumber"
+                        class="form-control"
+                        placeholder="phone number"
+                        aria-label="Phone Number"
+                        aria-describedby="phone number"
+                        required
+                      />
+                    </label>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-check-label" for="signup-email">
+                      Email
+                      <input
+                        type="email"
+                        id="signup-email"
+                        class="form-control"
+                        placeholder="Email"
+                        aria-label="Email"
+                        aria-describedby="email"
+                        required
+                      />
+                    </label>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-check-label" for="signup-password">
+                      Password
+                      <input
+                        type="password"
+                        id="signup-password"
+                        class="form-control"
+                        placeholder="Password"
+                        aria-label="Password"
+                        aria-describedby="password"
+                        required
+                      />
+                    </label>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-check-label" for="signup-location">
+                      Location
+                      <input
+                        type="text"
+                        id="signup-location"
+                        class="form-control"
+                        placeholder="e.g., Agungi, Lekki, Lagos"
+                        aria-label="location"
+                        aria-describedby="location"
+                        required
+                      />
+                    </label>
+                  </div>
+
+                  <div class="mb-3">
+  <label class="form-check-label" for="signup-userType">
+    Sign up as
+    <select
+      id="signup-userType"
+      class="form-control"
+      aria-label="User Type"
+      required
+    >
+      <option value="">-- Select your role --</option>
+      <option value="user">User</option>
+      <option value="installer">Installer</option>
+    </select>
+  </label>
+</div>
+
+                  <div class="form-check form-check-info text-left">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                      checked
+                      required
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      I agree to the
+                      <a href="#" class="text-dark font-weight-bolder"
+                        >Terms and Conditions</a
+                      >
+                    </label>
+                  </div>
+                  <div class="text-center">
+                    <button
+                      type="submit"
+                      class="btn bg-gradient-info w-100 mt-4 mb-0"
+                    >
+                      Sign Up
+                    </button>
+                  </div>
+                  <p class="text-sm mt-3 mb-0">
+                    Already have an account?
+                    <a href="signIn.html" class="text-dark font-weight-bolder"
+                      >Sign in</a
+                    >
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="footer py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mb-4 mx-auto text-center">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2"
+                >
+                  Home
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2"
+                >
+                  Shop
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2"
+                >
+                  About Us
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2"
+                >
+                  Contact Us
+                </a>
+              </div>
+              <div class="col-lg-8 mx-auto text-center mb-4 mt-2">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="text-secondary me-xl-4 me-4"
+                >
+                  <span class="text-lg fab fa-twitter"></span>
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="text-secondary me-xl-4 me-4"
+                >
+                  <span class="text-lg fab fa-linkedin-in"></span>
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="text-secondary me-xl-4 me-4"
+                >
+                  <span class="text-lg fab fa-facebook-f"></span>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-8 mx-auto text-center mt-1">
+                <p class="mb-0 text-secondary">
+                  Copyright ©
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"
+          integrity="sha512-nnzkI2u2Dy6HMnzMIkh7CPd1KX445z38XIu4jG1jGw7x5tSL3VBjE44dY4ihMU1ijAQV930SPM12cCFrB18sVw=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/perfect-scrollbar/1.5.5/perfect-scrollbar.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"></script>
+
+        <script>
+          var win = navigator.platform.indexOf("Win") > -1;
+          if (win && document.querySelector("#sidenav-scrollbar")) {
+            var options = {
+              damping: "0.5",
+            };
+            Scrollbar.init(
+              document.querySelector("#sidenav-scrollbar"),
+              options
+            );
+          }
+        </script>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <script src="../solar-company/assets/js/soft-ui-dashboard.min.js"></script>
+        <script type="module">
+          document.addEventListener("DOMContentLoaded", () => {
+            const signupForm = document.getElementById("signup-form");
+            const messageElement = document.getElementById("message");
+
+            const graphql_ApiUrl = "https://solar-afriq.onrender.com/graphql";
+
+            // GraphQL Mutation for Initial Signup - $role is now String!
+            const SIGNUP_MUTATION = `
+    mutation SignupUser(
+        $name: String!,
+        $phoneNumber: String!,
+        $email: String!,
+        $password: String!,
+        $address: String!,
+        $role: String! 
+    ) {
+        signup(
+            name: $name,
+            phoneNumber: $phoneNumber,
+            email: $email,
+            password: $password,
+            address: $address,
+            role: $role
+        ) {
+            message
+        }
+    }
+`;
+
+            const displayMessage = (msg, type = "error") => {
+              messageElement.textContent = msg;
+              messageElement.className = `text-center pt-4 text-${
+                type === "success" ? "success" : "danger"
+              }`;
+            };
+
+            signupForm.addEventListener("submit", async (event) => {
+              event.preventDefault();
+
+              displayMessage("Processing your request...", "info");
+
+              const name = document.getElementById("signup-fullname").value;
+              const phoneNumber =
+                document.getElementById("signup-phonenumber").value;
+              const email = document.getElementById("signup-email").value;
+              const password = document.getElementById("signup-password").value;
+              const address = document.getElementById("signup-location").value;
+              // Get the selected value directly from the dropdown
+              const role = document.getElementById("signup-userType").value; // This will now correctly get "User" or "Installer"
+              const termsChecked =
+                document.getElementById("flexCheckDefault").checked;
+
+              if (!termsChecked) {
+                displayMessage("You must agree to the Terms and Conditions.");
+                return;
+              }
+
+              // Basic validation for the userType dropdown
+              if (!role) {
+                displayMessage("Please select a user role.");
+                return;
+              }
+
+              const variables = {
+                name: name,
+                phoneNumber: phoneNumber,
+                email: email,
+                password: password,
+                address: address,
+                role: role, // This `role` variable will now hold 'User' or 'Installer'
+              };
+
+              try {
+                const response = await fetch(graphql_ApiUrl, {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                  },
+                  body: JSON.stringify({
+                    query: SIGNUP_MUTATION,
+                    variables: variables,
+                  }),
+                });
+
+                if (!response.ok) {
+                  const errorText = await response.text();
+                  console.error("HTTP Error:", response.status, errorText);
+                  displayMessage(
+                    `Server responded with an error: ${response.status} ${response.statusText}. Please try again later.`
+                  );
+                  return;
+                }
+
+                const result = await response.json();
+
+                if (result.errors) {
+                  console.error("GraphQL Signup Error:", result.errors);
+                  const errorMessage =
+                    result.errors.map((err) => err.message).join(", ") ||
+                    "An unknown error occurred during signup.";
+                  displayMessage(`Signup failed: ${errorMessage}`);
+                } else if (result.data && result.data.signup) {
+                  console.log("Signup successful:", result.data.signup);
+                  localStorage.setItem("userEmailForOtp", email);
+                  displayMessage(
+                    "Account created! Please check your email for the OTP to verify your account.",
+                    "success"
+                  );
+                  setTimeout(() => {
+                    window.location.href = "otp.html";
+                  }, 2000);
+                } else {
+                  console.error(
+                    "Unexpected API response for signup:",
+                    result
+                  );
+                  displayMessage(
+                    "An unexpected response was received from the server after signup. Please try again."
+                  );
+                }
+              } catch (error) {
+                console.error(
+                  "Network or parsing error during signup:",
+                  error
+                );
+                displayMessage(
+                  "An error occurred during signup. Please check your internet connection and try again."
+                );
+              }
+            });
+          });
+        </script>
+      </body>
+    </html>
