@@ -231,6 +231,7 @@
               <div id="openFormBtn" class="solar-button">
                 <a>Get Match<i class="fas fa-plus"></i></a>
               </div>
+<<<<<<< HEAD
               <div id="popupOverlay" class="popup-overlay"></div>
               <!--Dark overlay-->
               <!--Form-->
@@ -265,6 +266,8 @@
                   <button type="button" id="closeFormBtn">Close</button>
                 </form>
               </div>
+=======
+>>>>>>> 53dbeff493beb96dd434883891ad21791d380584
             </div>
           </div>
         </div>
@@ -382,9 +385,15 @@
             </div>
             <div class="solar-button">
               <!--Create a form to collect user information and match them with installer that shares same location/street with them-->
+<<<<<<< HEAD
               <button id="openFormBtn">
                 Get Match<i class="fas fa-plus"></i>
               </button>
+=======
+              <div id="openFormBtn2" class="solar-button">
+                <a>Get Match<i class="fas fa-plus"></i></a>
+              </div>
+>>>>>>> 53dbeff493beb96dd434883891ad21791d380584
             </div>
           </div>
         </div>
@@ -418,7 +427,13 @@
             <label for="location">Location:</label>
             <input type="location" id="location" name="location" required />
           </div>
+<<<<<<< HEAD
           <button type="submit">Submit</button>
+=======
+          <button type="submit" >
+            Submit
+          </button>
+>>>>>>> 53dbeff493beb96dd434883891ad21791d380584
         </form>
       </div>
     </div>
@@ -622,6 +637,28 @@
         }
       };
     </script>
+<<<<<<< HEAD
+=======
+    <script>
+      var modal = document.getElementById("formModal");
+      var btn = document.getElementById("openFormBtn2");
+      var span = document.getElementsByClassName("close-button")[0];
+
+      btn.onclick = function () {
+        modal.style.display = "flex";
+      };
+
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+>>>>>>> 53dbeff493beb96dd434883891ad21791d380584
 
     <!-- jquery js -->
     <script src="assets/js/vendor/jquery-3.6.2.min.js"></script>
