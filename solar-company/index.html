@@ -231,40 +231,6 @@
               <div id="openFormBtn" class="solar-button">
                 <a>Get Match<i class="fas fa-plus"></i></a>
               </div>
-              <div id="popupOverlay" class="popup-overlay"></div>
-              <!--Dark overlay-->
-              <!--Form-->
-              <div id="popupForm" class="popup-form">
-                <h2>
-                  Let's get your information so we match you with the nearest
-                  installer
-                </h2>
-                <form>
-                  <label for="name">Name:</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                  /><br /><br />
-                  <label for="phone">Phone Number:</label>
-                  <input
-                    type="number"
-                    id="number"
-                    name="number"
-                    required
-                  /><br /><br />
-                  <label for="address">Address:</label>
-                  <input
-                    type="number, text"
-                    id="numText"
-                    name="numText"
-                    required
-                  /><br /><br />
-                  <button type="submit">Submit</button>
-                  <button type="button" id="closeFormBtn">Close</button>
-                </form>
-              </div>
             </div>
           </div>
         </div>
@@ -380,11 +346,9 @@
                 </p>
               </div>
             </div>
-            <div class="solar-button">
-              <!--Create a form to collect user information and match them with installer that shares same location/street with them-->
-              <button id="openFormBtn">
-                Get Match<i class="fas fa-plus"></i>
-              </button>
+
+            <div id="openFormBtn2" class="solar-button">
+              <a>Get Match<i class="fas fa-plus"></i></a>
             </div>
           </div>
         </div>
@@ -606,9 +570,14 @@
     <script>
       var modal = document.getElementById("formModal");
       var btn = document.getElementById("openFormBtn");
+      var btn2 = document.getElementById("openFormBtn2");
       var span = document.getElementsByClassName("close-button")[0];
 
       btn.onclick = function () {
+        modal.style.display = "flex";
+      };
+
+      btn2.onclick = function () {
         modal.style.display = "flex";
       };
 
