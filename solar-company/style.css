@@ -720,7 +720,7 @@ a.box-button {
   transition: background-color 0.3s ease;
 }
 
-.modal-content button [type="submit"]:hover {
+.modal-content [type="submit"]:hover {
   background-color: #218838;
   color: white;
 }
